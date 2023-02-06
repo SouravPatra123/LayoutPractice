@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>test-2</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <style>
+      .in {
+        display: block;
+        padding: 5px;
+        margin: 10px;
+        border-radius: 20px;
+      }
+      .main-container {
+        display: grid;
+        grid-template-areas:
+          "a a"
+          "b c"
+          "d d";
+        grid-template-columns: repeat(2, 430px);
+        border: 2px solid black;
+        width: fit-content;
+        background: skyblue;
+      }
+      .h1 {
+        grid-area: a;
+      }
+      .s {
+        grid-area: b;
+        margin-top: 30px;
+        margin-left: 100px;
+      }
+      .s2 {
+        grid-area: c;
+        border: 1px solid black;
+        width: 250px;
+        height: 300px;
+        padding: 30px;
+        margin-top: 30px;
+        margin-left: 100px;
+        margin-right: 100px;
+      }
+      .f {
+        grid-area: d;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        padding: 5px;
+      }
+      button {
+        background-color: black;
+        color: white;
+        width: 100px;
+      }
+      #h11 {
+        font-size: 20px;
+      }
+      .fa-magnifying-glass {
+        margin-left: -84px;
+      }
+      .fa-arrow-right {
+        margin-left: -18px;
+        color: darkslateblue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main-container">
+      <header class="h1">
+        <nav>
+          <a href="">home</a>
+          <a href="">about us</a>
+          <a href="">service</a>
+          <a href="">contact</a>
+          <input type="text" /><i class="fa-solid fa-magnifying-glass"></i>
+          <a href="">sign in</a>
+          <a href="">sign up</a>
+        </nav>
+      </header>
+      <section class="s">
+        <h3 id="h11">creative agency</h3>
+        <h1>for our business</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique
+          suscipit dignissimos dolor consequuntur quia eum recusandae ab iure
+          error porro unde quam impedit, reiciendis provident, rem accusantium
+          vero beatae. Praesentium.
+        </p>
+        <button>our services</button><i class="fa-solid fa-arrow-right"></i>
+      </section>
+      <section class="s2">
+        <h1>registration for free</h1>
+        <input type="text" class="in" placeholder="full name" />
+        <input type="email" class="in" placeholder="email address" />
+        <input type="text" class="in" placeholder="user name" />
+        <input type="password" class="in" placeholder="password" />
+        <button class="in">start now</button>
+      </section>
+      <footer class="f">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-solid fa-play"></i>
+      </footer>
+    </div>
+  </body>
+</html>
